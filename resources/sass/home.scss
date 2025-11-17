@@ -1,0 +1,16 @@
+#homepage {
+    p {
+        color: red;
+        background-color: aqua;
+    }
+}
+
+@use 'variables';
+@use './home.scss';
+
+// After
+@use "sass:color";
+@use "sass:math";
+
+$mycolor: color.mix(white, $primary, 20%);
+$red: color.channel($primary, "red", $space: rgb);
